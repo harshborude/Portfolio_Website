@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Chess from "../../Assets/Projects/chess.png";
 import IMDb from "../../Assets/Projects/Imdb.jpg";
-import editor from "../../Assets/Projects/codeEditor.png";
+import FrontendProject from "../../Assets/Projects/FrontendProject.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
@@ -27,8 +27,19 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
+              title="Blogs"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              ghLink="https://github.com/harshborude/test"
+              demoLink="https://portfoliowebsiteharsh.vercel.app/" 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={FrontendProject}
+              isBlog={false}
+              title="Frontend Project"
+              description="Front end website made using Next.js and React.js. Used tailwind and CSS for animations."
               ghLink=""
               demoLink=""
             />
